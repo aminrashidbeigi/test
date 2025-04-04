@@ -348,7 +348,7 @@ figure {
 }
 
 .fh5co-cover {
-  height: 1000px;
+  height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -378,7 +378,7 @@ figure {
 
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
-  height: 900px;
+  height: 700px;
   display: table;
   width: 100%;
 }
@@ -469,6 +469,10 @@ figure {
   #fh5co-event .display-t,
   #fh5co-event .display-tc {
     height: inherit;
+  }
+
+  .event-wrap {
+    margin-bottom: 30px;
   }
 }
 
@@ -1118,14 +1122,9 @@ form label {
 }
 
 .simply-countdown {
-  /* The countdown */
-  margin-bottom: 2em;
-  margin-top: 2em;
-
-
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
-
-
 
 #fh5co-testimonial,
 #fh5co-services,
@@ -2387,8 +2386,9 @@ form label {
 
 .poetry-rotator {
   position: relative;
-  height: 60px;
-  overflow: hidden;
+  min-height: 60px;
+  height: auto;
+  overflow: visible;
   cursor: pointer;
   padding-bottom: 5px;
 }
@@ -2422,11 +2422,35 @@ form label {
   transform: translateY(20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   text-align: center;
+  height: auto;
 }
 
 .poetry-line.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+  .poetry-rotator {
+    height: auto;
+    min-height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .poetry-line {
+    position: absolute;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .kurdish-poetry,
+  .persian-poetry {
+    font-size: 1em;
+    line-height: 1.8;
+    display: inline-block;
+    width: 100%;
+    white-space: normal;
+  }
 }
 
 /* Keep your existing poetry styles */
@@ -2585,4 +2609,47 @@ form label {
   cursor: pointer;
   color: #f14e95;
   font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-group.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .form-group.text-center .btn {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0 !important;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .form-group.text-center .btn i {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .fh5co-nav .menu-1,
+  .fh5co-nav .menu-2,
+  .hidden-xs {
+    display: none !important;
+  }
+
+  .fh5co-nav {
+    padding: 0;
+  }
+
+  .fh5co-nav ul {
+    display: none !important;
+  }
+
+  .fh5co-nav-toggle {
+    display: none !important;
+  }
 }

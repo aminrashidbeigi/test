@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const poetryLines = document.querySelectorAll('.poetry-line');
     let currentIndex = 0;
     const rotationInterval = 5000; // 5 seconds
-    const progressBar = document.createElement('div');
-    progressBar.className = 'poetry-progress';
-    document.querySelector('.poetry-rotator').appendChild(progressBar);
+    // const progressBar = document.createElement('div');
+    // progressBar.className = 'poetry-progress';
+    // document.querySelector('.poetry-rotator').appendChild(progressBar);
 
     let progressInterval;
     let isHovered = false;
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         currentProgress += progressIncrement;
         // Scale from center, expanding both ways
-        progressBar.style.transform = `translateX(-50%) scaleX(${currentProgress / 100})`;
+        // progressBar.style.transform = `translateX(-50%) scaleX(${currentProgress / 100})`;
 
         if (currentProgress >= 100) {
             clearInterval(progressInterval);
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function rotatePoetry() {
         // Reset progress
         currentProgress = 0;
-        progressBar.style.transform = 'translateX(-50%) scaleX(0)';
+        // progressBar.style.transform = 'translateX(-50%) scaleX(0)';
 
         // Remove active class from current line
         poetryLines[currentIndex].classList.remove('active');
