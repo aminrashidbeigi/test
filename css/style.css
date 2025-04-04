@@ -461,7 +461,7 @@ figure {
   #fh5co-counter,
   #fh5co-event {
     height: inherit;
-    padding: 7em 0;
+    padding: 3em 0;
   }
 
   #fh5co-counter .display-t,
@@ -472,7 +472,11 @@ figure {
   }
 
   .event-wrap {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .row .col-md-12.text-center {
+    margin-top: 20px;
   }
 }
 
