@@ -2470,11 +2470,45 @@ form label {
 
   .kurdish-poetry,
   .persian-poetry {
-    font-size: 1em;
-    line-height: 1.8;
+    font-size: 0.7em !important;
+    line-height: 1.6;
     display: inline-block;
     width: 100%;
     white-space: normal;
+  }
+
+  [dir="rtl"] {
+    font-size: 0.9em;
+  }
+
+  [dir="rtl"] h3 {
+    font-size: 1.2em;
+  }
+
+  [dir="rtl"] p {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  [dir="rtl"] span {
+    font-size: 0.9em;
+  }
+
+  .note-content h4[dir="rtl"] {
+    font-size: 18px;
+  }
+
+  .note-content p[dir="rtl"] {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .note-content small[dir="rtl"] {
+    font-size: 11px;
+  }
+
+  .event-col span[dir="rtl"] {
+    font-size: 0.9em;
   }
 }
 
