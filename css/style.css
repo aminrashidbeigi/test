@@ -353,6 +353,15 @@ figure {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
+  background-image: url(../images/bg.jpg);
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-cover {
+    background-image: url(../images/bg-mob.jpg) !important;
+    background-position: center center;
+    background-color: white;
+  }
 }
 
 .fh5co-cover .overlay {
@@ -2188,6 +2197,18 @@ form label {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .notes-display {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .note-item {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 .notes-display h3 {
   color: #333;
   margin-bottom: 30px;
@@ -2261,21 +2282,21 @@ form label {
 #notes-container {
   max-height: 600px;
   overflow-y: auto;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 #notes-container::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 #notes-container::-webkit-scrollbar-track {
   background: #f1f1f1;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 #notes-container::-webkit-scrollbar-thumb {
   background: rgba(241, 78, 149, 0.5);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 #notes-container::-webkit-scrollbar-thumb:hover {
@@ -2655,5 +2676,13 @@ form label {
 
   .fh5co-nav-toggle {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-cover {
+    background-image: url(../images/bg-mob.jpg) !important;
+    background-position: center center;
+    background-color: white;
   }
 }
