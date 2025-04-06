@@ -1054,10 +1054,18 @@ form label {
 
 /* Persian Poetry Style */
 #fh5co-header .display-tc h2 .persian-poetry {
-  font-family: 'Vazirmatn', sans-serif;
-  font-size: 20px;
-  line-height: 2;
+  font-family: 'Noto Nastaliq Urdu', serif !important;
+  font-size: 24px;
+  line-height: 2.5;
   margin: 10px 0;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-header .display-tc h2 .persian-poetry {
+    font-size: 18px;
+    line-height: 2.2;
+  }
 }
 
 /* Kurdish Poetry Style */
@@ -2528,9 +2536,21 @@ form label {
 }
 
 .persian-poetry {
-  font-family: 'Vazirmatn', sans-serif;
-  font-size: 1.2em;
-  line-height: 1.6;
+  font-family: 'Noto Nastaliq Urdu', serif !important;
+  font-size: 20px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+
+  .kurdish-poetry,
+  .persian-poetry {
+    font-size: 0.85em !important;
+    line-height: 2;
+    display: inline-block;
+    width: 100%;
+    white-space: normal;
+  }
 }
 
 .fancy-button {
