@@ -2409,6 +2409,14 @@ form label {
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  #fh5co-header img[src="images/fprint.png"] {
+    width: 120px;
+    height: 120px;
+    margin: 15px auto;
+  }
+}
+
 .poetry-rotator {
   position: relative;
   min-height: 60px;
