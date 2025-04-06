@@ -2487,7 +2487,7 @@ form label {
   .kurdish-poetry,
   .persian-poetry {
     font-size: 0.7em !important;
-    line-height: 1.6;
+    line-height: 1.8;
     display: inline-block;
     width: 100%;
     white-space: normal;
@@ -2530,9 +2530,10 @@ form label {
 
 /* Keep your existing poetry styles */
 .kurdish-poetry {
-  font-family: 'Vazirmatn', sans-serif;
-  font-size: 1.2em;
-  line-height: 1.6;
+  font-family: 'Noto Nastaliq Kurdish', serif;
+  font-size: 1.6em;
+  line-height: 2;
+  margin: 10px 0;
 }
 
 .persian-poetry {
@@ -2545,8 +2546,8 @@ form label {
 
   .kurdish-poetry,
   .persian-poetry {
-    font-size: 0.85em !important;
-    line-height: 2;
+    font-size: 0.7em !important;
+    line-height: 1.8;
     display: inline-block;
     width: 100%;
     white-space: normal;
