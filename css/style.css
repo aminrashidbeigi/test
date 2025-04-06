@@ -2402,8 +2402,8 @@ form label {
 
 /* Fingerprint image size */
 #fh5co-header img[src="images/fprint.png"] {
-  width: 128px;
-  height: 128px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   margin: 20px auto;
   display: block;
